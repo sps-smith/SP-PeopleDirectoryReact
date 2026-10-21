@@ -1,0 +1,78 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "sp-people-directory-react-client-side-solution",
+    "id": "afd2750d-8246-4239-ad8b-0b0121e1169a",
+    "version": "1.0.0.1",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "webApiPermissionRequests": [
+      {
+        "resource": "Volaris People Directory API",
+        "scope": "user_impersonation"
+      },
+      {
+        "resource": "Windows Azure Active Directory",
+        "scope": "User.Read"
+      },
+      {
+          "resource": "Windows Azure Active Directory",
+          "scope": "User.Read.All"
+      },
+      {
+          "resource": "Microsoft Graph",
+          "scope": "User.Read"
+      },
+      {
+          "resource": "Microsoft Graph",
+          "scope": "User.ReadBAsic.All"
+      },
+      {
+          "resource": "Microsoft Graph",
+          "scope": "People.Read"
+      },
+      {
+          "resource": "Microsoft Graph",
+          "scope": "Presence.Read"
+      },
+      {
+          "resource": "Microsoft Graph",
+          "scope": "Presence.Read.All"
+      },
+      {
+        "resource": "Microsoft Graph",
+        "scope": "Chat.ReadWrite"
+    }
+  ],
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.17.4"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "sp-people-directory-react description"
+      },
+      "longDescription": {
+        "default": "sp-people-directory-react description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "sp-people-directory-react Feature",
+        "description": "The feature that activates elements of the sp-people-directory-react solution.",
+        "id": "e1a03a08-2678-429a-aeaf-3eb54a7820f2",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/sp-people-directory-react.sppkg"
+  }
+}

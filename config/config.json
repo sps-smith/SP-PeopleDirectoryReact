@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "react-people-directory-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/reactPeopleDirectory/ReactPeopleDirectoryWebPart.js",
+          "manifest": "./src/webparts/reactPeopleDirectory/ReactPeopleDirectoryWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "ReactPeopleDirectoryWebPartStrings": "lib/webparts/reactPeopleDirectory/loc/{locale}.js"
+  }
+}

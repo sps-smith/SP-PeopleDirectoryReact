@@ -1,0 +1,463 @@
+@import '~@fluentui/react/dist/sass/References.scss';
+
+@media screen and (min-width: 900px) {
+	.searchboxdiv > span:first-child{
+		display: flex;
+		flex-flow: row;
+		background-color: lightgrey;
+		border:none !important;
+		padding: 0;
+		width: 100%;
+		
+	}
+
+	.searchboxdiv input[Type=text]{
+		background-color: white;
+		padding-left: 2px;
+		height: 30px;
+    width: auto;
+	  }
+	  
+
+	.reccss{
+		font-size: 1rem;
+		font-style: italic;
+		font-weight: 700;
+		color: #008ab0;
+		position: absolute;
+		right: 40px;
+	}
+
+	.pagermain{
+		display: flex;
+		flex-flow: row;
+		justify-content: space-between;
+		margin-top:10px;
+	}
+}
+
+@media screen and (max-width: 900px) {
+    .searchboxdiv > span:first-child{
+      flex-flow: wrap;
+	  width: 100%;
+    }
+
+    .searchboxdiv input[Type=text]{
+      background-color: lightgrey;
+      padding-left: 2px;
+      height: 30px;
+    }
+
+    .pagermain{
+      flex-flow: wrap;
+      margin-bottom: 10px;
+    }
+
+    .reccss{
+		font-size: 1rem;
+		font-style: italic;
+		font-weight: 700;
+		color: #008ab0;
+		position: absolute;
+		right: 0;
+		left: 15px;
+		margin-top: 30px;
+  }
+}
+
+.reactPeopleDirectory {
+  overflow: hidden;
+  padding: 1em;
+  color: "[theme:bodyText, default: #323130]";
+  color: var(--bodyText);
+  &.teams {
+    font-family: $ms-font-family-fallbacks;
+  }
+}
+
+// searchbox styles
+.searchboxdiv{
+  background-color: lightgrey;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+
+.searchbuttons{
+  display: flex;
+}
+
+.searchbuttons button{
+  padding: 5px;
+  font-weight: bold;
+  border: none;
+}
+
+.searchbuttons button:first-child{
+  background-color: #218838;
+  color:#fff;
+}
+
+.searchbuttons button:nth-child(2){
+  background-color: #E0A800;
+  color: #000;
+}
+
+.searchbuttons button:last-child{
+  background-color: lightskyblue;
+  color: #000;
+}
+
+//end searchbox styles
+
+
+.pagerdiv{
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  display: flex;
+  cursor: pointer;
+}
+
+.pagerdiv > div:nth-child(3), .pagerdiv > div:nth-child(4),
+.pagerdiv > div:nth-child(5),.pagerdiv > div:nth-child(6){
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.pagerdiv > div{
+  display: flex;
+  border-right: 1px solid lightgray;
+  padding: 5px;
+  color: darkblue;
+
+  &:hover{
+    background-color: lightblue;
+  }
+}
+
+.moveleft{
+  margin-left: -15px;
+}
+
+.moveright{
+  margin-right: -15px;
+}
+
+.selectedcss{
+  background-color: lightblue;
+}
+
+.pagerbold{
+  font-weight: bold;
+  font-size: 10pt;
+  cursor: pointer;
+}
+//end pager styles
+
+//Filter styles
+.filtermain{
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+}
+
+.filterspan{
+  font-weight: bold;
+  padding-right: 10px;
+}
+
+.filterdiv{
+  margin-right: 10px;
+}
+
+button.filterbutton{
+  padding: 5px;
+  background-color: #128496;
+  color: #fff;
+  border-radius: 5px;
+  margin-bottom: 5px;
+
+  &:hover{
+    background-color: #128496;
+    color: #fff;
+  }
+}
+
+.cmbmain{
+  position: absolute;
+  z-index: 1;
+}
+
+.cmbmainone{
+  display: none;
+}
+
+.clearbtn{
+  padding: 5px;
+  background: red;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+.clearbtnhide{
+  display: none;
+}
+
+div.cmbmaindiv {
+    border: 1px solid lightgray;
+    background-color: #fff;
+
+    > span{
+      width: 100%;
+      padding: 0;
+      border: none;
+    }
+
+    input[Type=text]{
+      padding-left: 2px;
+      height: 30px;
+  }
+}
+
+button.applybtn{
+  padding: 5px;
+  background-color: green;
+  color: #fff;
+  border-radius: 5px;
+  margin-bottom: 5px;
+
+  &:hover{
+    background-color: green;
+    color: #fff;
+  }
+}
+.cmbocss{
+    display: flex;
+    flex-flow: column;
+    height: 400px;
+    overflow: auto;
+    border: 1px solid grey;
+    width: 400px;
+    padding: 10px;
+    background-color: lightblue;
+}
+
+span.chkbx div{
+  border: 1px solid #000;
+  margin-right: 5px;
+
+  &:hover{
+    border: 1px solid #000;
+  }
+}
+
+.rightcss{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+//End filter styles
+
+//Selected filter Styles
+.selectedmain{
+  margin-top: 10px;
+}
+.selectedfiltercss{
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+  margin-top: 10px;
+  border: 1px solid lightgray;
+}
+
+.selectedfiltercss > div{
+  width: 33%;
+  border-right: 1px solid lightgray;
+  padding: 10px;
+}
+
+.selectedfiltercss > div:last-child{
+  border: none;
+}
+
+.deleteicn{
+  color: red;
+  cursor: pointer;
+}
+
+.selecteditemfilter{
+    background-color: lightgrey;
+    margin-bottom: 2px;
+    padding: 2px;
+    display: flex;
+    justify-content: space-between;
+}
+
+//End of Selected Filters Styles
+
+
+//list styles
+thead th div{
+  font-weight: bold;
+}
+
+.emailwrap{
+  word-break: break-all;
+}
+//End styles
+
+//People styles
+.peoplemain{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+.peoplecss{
+  background-color: #fff;
+  box-shadow: 2px 2px 2px 2px lightgrey;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  padding: 10px;
+  width: 320px;
+
+}
+
+
+.personCard{
+  --person-card-base-icons-left-spacing: -300px;
+  --person-line1-text-color:#008ab0;
+  --person-line1-font-size: 20px;
+  --person-line1-font-weight: 600;
+  --person-initials-text-color: white;
+  --person-initials-background-color: #008ab0;
+  --person-line2-text-line-height: 20px;
+  --person-line2-text-color: #000;
+  --message-hover-color: green;
+}
+
+div.sections fluent-text{
+  display: none;
+}
+
+fluent-button button{
+  display: none;
+}
+
+div.root > div  > div:first-child{
+  padding-left: 0;
+}
+
+
+
+.icon{
+  margin-inline-end: 10px !important;
+}
+
+.baseIcons{
+  z-index: 0;
+}
+
+fluent-button.icon.neutral{
+  z-index: 0 !important;
+  margin-inline-end: 10px !important;
+}
+
+.peoplecss div.badgescss{
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+  margin-top: 20px;;
+
+  div{
+    margin-right: 20px;
+  }
+}
+
+.peopleicons{
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  margin-top: 10px;
+
+  div{
+    display: block;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+}
+
+
+//End of people styles
+.stnowrap{
+  white-space: nowrap;
+  padding-right: 10px;
+}
+
+.welcome {
+  text-align: center;
+}
+
+.welcomeImage {
+  width: 100%;
+  max-width: 420px;
+}
+
+.links {
+  a {
+    text-decoration: none;
+    color: "[theme:link, default:#03787c]";
+    color: var(--link); // note: CSS Custom Properties support is limited to modern browsers only
+
+    &:hover {
+      text-decoration: underline;
+      color: "[theme:linkHovered, default: #014446]";
+      color: var(--linkHovered); // note: CSS Custom Properties support is limited to modern browsers only
+    }
+  }
+}
+
+.detailsbtndiv{
+  margin-top: 10px;
+}
+
+.popupbackground{
+  background-color: #fff;
+  width: 450px;
+
+  td:first-child{
+    width: 80px;
+  }
+
+  td:nth-child(2){
+    width: 200px;
+    white-space: normal;
+  }
+
+  td:nth-child(3){
+    width: 30px;
+  }
+}
+
+.popupbtn{
+  background-color: #008ab0;
+  color: #fff;
+  cursor: pointer;
+
+  &:hover{
+    background-color: #008ab0;
+    color: #fff;
+    cursor: pointer;
+  }
+}
+
+.headstyle{
+  color: #008ab0;
+}
+
+svg{
+  float: right;
+}

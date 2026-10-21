@@ -1,0 +1,21 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "16.18.1",
+    "sdksVersions": {
+      "@microsoft/microsoft-graph-client": "3.0.2",
+      "@microsoft/teams-js": "2.9.1"
+    },
+    "version": "1.17.4",
+    "libraryName": "sp-people-directory-react",
+    "libraryId": "afd2750d-8246-4239-ad8b-0b0121e1169a",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "sp-people-directory-react",
+    "solutionShortDescription": "sp-people-directory-react description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}
